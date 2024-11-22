@@ -22,7 +22,6 @@ return {
   -- 		},
   -- 	},
   -- },
-
   {
     "mrcjkb/rustaceanvim",
     version = "^5",
@@ -116,6 +115,8 @@ return {
       require("outline").setup {}
     end,
   },
+
+  -- show version
   {
     "saecki/crates.nvim",
     ft = { "rust", "toml" },
@@ -177,5 +178,14 @@ return {
   },
   {
     "nvim-treesitter/nvim-treesitter-textobjects",
+  },
+
+  {
+    "nvim-flutter/flutter-tools.nvim",
+    lazy = false,
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+    config = true,
   },
 }
