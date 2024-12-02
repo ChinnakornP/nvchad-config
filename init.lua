@@ -39,3 +39,5 @@ end)
 require("flutter-tools").setup {
   fvm = true,
 }
+
+require "dbee"
