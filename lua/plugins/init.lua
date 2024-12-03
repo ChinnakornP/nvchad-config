@@ -179,7 +179,6 @@ return {
   {
     "nvim-treesitter/nvim-treesitter-textobjects",
   },
-
   {
     "nvim-flutter/flutter-tools.nvim",
     lazy = false,
@@ -202,5 +201,8 @@ return {
     config = function()
       require("dbee").setup(--[[optional config]])
     end,
+  },
+  {
+    "rest-nvim/rest.nvim",
   },
 }

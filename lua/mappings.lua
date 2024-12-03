@@ -11,3 +11,4 @@ map("i", "jk", "<ESC>")
 --
 -- nvimtree
 map("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", { desc = "nvimtree toggle window" })
+map("n", "<leader>rr", "<cmd>Rest run<CR>", { desc = "Rest run" })

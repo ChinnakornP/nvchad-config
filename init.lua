@@ -41,3 +41,4 @@ require("flutter-tools").setup {
 }
 
 require "dbee"
+require "rest-nvim"
