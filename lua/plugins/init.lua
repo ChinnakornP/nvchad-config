@@ -179,14 +179,14 @@ return {
   {
     "nvim-treesitter/nvim-treesitter-textobjects",
   },
-  -- {
-  --   "nvim-flutter/flutter-tools.nvim",
-  --   lazy = false,
-  --   dependencies = {
-  --     "nvim-lua/plenary.nvim",
-  --   },
-  --   config = true,
-  -- },
+  {
+    "nvim-flutter/flutter-tools.nvim",
+    lazy = false,
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+    config = true,
+  },
   {
     "kndndrj/nvim-dbee",
     dependencies = {
