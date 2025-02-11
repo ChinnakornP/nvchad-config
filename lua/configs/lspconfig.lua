@@ -7,13 +7,14 @@ local lspconfig = require "lspconfig"
 local servers = {
   "html",
   "cssls",
-  "rust_analyzer",
+  -- "rust_analyzer",
   "lua_ls",
   "ts_ls",
   "intelephense",
   "gopls",
   "haxe_language_server",
   -- "dartls",
+  "jsonls",
 }
 local nvlsp = require "nvchad.configs.lspconfig"
 
@@ -25,17 +26,6 @@ for _, lsp in ipairs(servers) do
     capabilities = nvlsp.capabilities,
   }
 end
-
-lspconfig["jsonls"].setup {
-  filetypes = {
-    "json",
-    "jsonc",
-    "arb",
-  },
-  on_attach = nvlsp.on_attach,
-  on_init = nvlsp.on_init,
-  capabilities = nvlsp.capabilities,
-}
 
 -- configuring single server, example: typescript
 -- lspconfig.ts_ls.setup {
