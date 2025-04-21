@@ -15,6 +15,7 @@ local servers = {
   "haxe_language_server",
   -- "dartls",
   "jsonls",
+  "tailwindcss",
 }
 local nvlsp = require "nvchad.configs.lspconfig"
 

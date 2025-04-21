@@ -113,3 +113,12 @@ require("flutter-tools").setup {
     },
   },
 }
+
+require("nvim-tree").setup {
+  view = {
+    width = 50,
+  },
+  filters = {
+    dotfiles = true,
+  },
+}
