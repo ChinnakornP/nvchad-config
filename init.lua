@@ -116,9 +116,15 @@ require("flutter-tools").setup {
 
 require("nvim-tree").setup {
   view = {
-    width = 50,
+    width = 80,
   },
   filters = {
     dotfiles = true,
+  },
+  update_focused_file = {
+    enable = true,
+    update_root = {
+      enable = true,
+    },
   },
 }
