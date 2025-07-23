@@ -28,9 +28,20 @@ for _, lsp in ipairs(servers) do
   }
 end
 
--- configuring single server, example: typescript
--- lspconfig.ts_ls.setup {
---   on_attach = nvlsp.on_attach,
---   on_init = nvlsp.on_init,
---   capabilities = nvlsp.capabilities,
--- }
+-- setup astro with custom config
+lspconfig.astro.setup {
+  cmd = { "astro-ls", "--stdio" },
+  filetypes = { "astro" },
+  root_dir = lspconfig.util.root_pattern("package.json", "tsconfig.json", "jsconfig.json", ".git"),
+  on_attach = nvlsp.on_attach,
+  on_init = nvlsp.on_init,
+  capabilities = nvlsp.capabilities,
+  settings = {
+    astro = {
+      completion = {
+        tags = { enable = true },
+        attributes = { enable = true },
+      },
+    },
+  },
+}
