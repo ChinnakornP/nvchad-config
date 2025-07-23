@@ -247,4 +247,7 @@ return {
   {
     "dart-lang/dart-vim-plugin",
   },
+  {
+    "wuelnerdotexe/vim-astro",
+  },
 }
